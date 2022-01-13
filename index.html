@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Exchange</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tiny Money Exchange</h1>
+        <div class="exchange">
+            <div class="currency">
+<!--                 <select name="" id="selector">
+                    <option value="">
+                        Выбери валюту
+                    </option>
+                    <option value="" id="usd">
+                        USD
+                    </option>
+                    <option value="" id="eur">
+                        EUR
+                    </option>
+                </select> -->
+                <label class="name-money" for="usd">
+                    <input name="curr" type="radio" id="usd"> USD
+                </label>
+                <label class="name-money" for="eur">
+                    <input name="curr" type="radio" id="eur" "> EUR
+                </label>
+            </div>
+            <div class="quantity">
+                <div class="left">
+                    <input type="text" name="" id="amount" value="" class="input-text">
+                    <span>Введите количество валюты</span>
+                </div>
+                <div class="right">
+                    <input type="text" name="" id="total-amount" class="input-text minus">
+                    <span>Столько получится в рублях</span> 
+                </div>
+
+                <!-- <button id="btn">Конвертировать</button> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
