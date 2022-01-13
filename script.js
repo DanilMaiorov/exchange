@@ -15,7 +15,7 @@ const getData = () => {
         })
     })
 }
-getData()
+
 
 const calculate = (money) => {
     //console.log(Object.entries(money.Valute))
@@ -46,9 +46,14 @@ const calculate = (money) => {
     }) 
 }
 
+const validation = () => {
+    amountInput.addEventListener('input', (e) => {
+        e.target.value = e.target.value.match(/^[0-9\.]+/g); 
+    })
+}
 
-    
-
+getData()
+validation()
 
 //https://www.cbr-xml-daily.ru/daily_json.js
 
